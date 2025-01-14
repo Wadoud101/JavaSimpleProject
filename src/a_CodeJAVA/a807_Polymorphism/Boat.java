@@ -1,4 +1,4 @@
-package a_CodeJAVA.a807_polymorphism;
+package a_CodeJAVA.a807_Polymorphism;
 
 public class Boat extends Vehicle{
     void go(){

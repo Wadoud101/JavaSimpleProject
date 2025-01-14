@@ -1,4 +1,4 @@
-package a_CodeJAVA.a000_Projects.a03_compoundInterestCalculator;
+package a_CodeJAVA.a000_Projects.a03_CompoundInterestCalculator;
 
 import java.util.Scanner;
 

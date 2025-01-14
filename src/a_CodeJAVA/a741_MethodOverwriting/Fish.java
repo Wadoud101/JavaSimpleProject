@@ -1,4 +1,4 @@
-package a_CodeJAVA.a741_methodOverwriting;
+package a_CodeJAVA.a741_MethodOverwriting;
 
 public class Fish extends Animals{
 

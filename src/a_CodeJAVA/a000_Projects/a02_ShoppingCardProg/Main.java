@@ -1,4 +1,4 @@
-package a_CodeJAVA.a000_Projects.a02_shoppingCardProg;
+package a_CodeJAVA.a000_Projects.a02_ShoppingCardProg;
 
 import java.util.Scanner;
 public class Main {

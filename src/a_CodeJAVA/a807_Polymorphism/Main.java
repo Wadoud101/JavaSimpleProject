@@ -1,4 +1,4 @@
-package a_CodeJAVA.a807_polymorphism;
+package a_CodeJAVA.a807_Polymorphism;
 
 public class Main {
     public static void main(String[] args) {

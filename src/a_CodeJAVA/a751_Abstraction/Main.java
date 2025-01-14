@@ -1,4 +1,4 @@
-package a_CodeJAVA.a751_abstraction;
+package a_CodeJAVA.a751_Abstraction;
 
 public class Main {
     public static void main(String[] args) {
