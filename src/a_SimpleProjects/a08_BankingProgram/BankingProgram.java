@@ -47,7 +47,7 @@ public class BankingProgram {
         System.out.print("Enter your DEPOSIT amount: ");
         double depostAmount = in.nextDouble();
         if (depostAmount < 0){
-            System.out.println("The amount can NOT be negate!!!!");
+            System.out.println("The amount can NOT be negative!!!!");
         }else {
             balance = balance + depostAmount;
             System.out.println("The amount of $" + depostAmount + " added to your Balance.");
@@ -59,8 +59,16 @@ public class BankingProgram {
     static void withdraw(){
         System.out.print("How much do you want to Withdraw: ");
         double withdrawAmount = in.nextDouble();
-        balance = balance - withdrawAmount;
-        System.out.println("The amount of $" + withdrawAmount + " is deducted from your Balance.");
+        if(withdrawAmount > balance){
+            System.out.println("INSUFFICIENT BALANCE");
+        }else if(withdrawAmount < 0){
+            System.out.println("The amount can't be NEGATIVE");
+        }else {
+            balance = balance - withdrawAmount;
+            System.out.println("The amount of $" + withdrawAmount + " is deducted from your Balance.");
+
+        }
+
 
     }
 }
