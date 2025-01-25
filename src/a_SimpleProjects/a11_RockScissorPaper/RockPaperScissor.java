@@ -26,7 +26,7 @@ public class RockPaperScissor {
 
             }
             computerChoice = choice[random.nextInt(3)];
-            System.out.println("Computer Choice " + computerChoice);
+            System.out.println("Computer Choice: " + computerChoice);
             if(playerChoice.equals(computerChoice)){
                 System.out.println("THAT'S A TIE, Enter again your move!!!!");
             } else if (playerChoice.equals("rock") && computerChoice.equals("scissors")
