@@ -23,10 +23,11 @@ public class SlotSymbolGame {
             System.out.println("Current balnce: $" + balance);
             System.out.print("Enter your bet amount: ");
             bet = in.nextInt();
-            in.nextInt();
+            in.nextLine();
+            //in.nextInt();
 
             if(bet > balance){
-                System.out.println("Insuffitient amount!!!!!");
+                System.out.println("Insufficient amount!!!!!");
                 continue;
 
             } else if (bet <= 0) {
@@ -41,16 +42,19 @@ public class SlotSymbolGame {
             row = spinRow();
             printRow(row);
             payout = getPayout(row, bet);
+
             if (payout > 0){
                 System.out.println("You Won $" + payout);
                 balance += payout;
+                System.out.println("Your Balance is: " + balance);
             }else {
                 System.out.println("Sorry you lost this round");
+                System.out.println("Your balance is: " + balance);
             }
 
             System.out.print("Do you want to play again? (Y/N): ");
             playAgain = in.nextLine().toLowerCase();
-            if(!playAgain.equals("Y")){
+            if(!playAgain.equals("y")){
                 break;
             }
         }
@@ -80,41 +84,41 @@ public class SlotSymbolGame {
 
         if (row[0].equals(row[1]) && row[1].equals(row[2])){
             return switch (row[0]){
-                case "🍕" ->  bet * 5;
+                case "🍕" ->  bet * 10;
                 case "✨" ->  bet * 10;
-                case "🧨" ->  bet * 15;
-                case "🎉" ->  bet * 20;
-                case "🎀" ->  bet * 50;
+                case "🧨" ->  bet * 10;
+                case "🎉" ->  bet * 10;
+                case "🎀" ->  bet * 10;
                 default -> 0;
 
             };
         } else  if (row[0].equals(row[1])){
             return switch (row[0]){
-                case "🍕" ->  bet * 3;
+                case "🍕" ->  bet * 5;
                 case "✨" ->  bet * 5;
-                case "🧨" ->  bet * 8;
-                case "🎉" ->  bet * 10;
-                case "🎀" ->  bet * 20;
+                case "🧨" ->  bet * 5;
+                case "🎉" ->  bet * 5;
+                case "🎀" ->  bet * 5;
                 default -> 0;
 
             };
         }else  if (row[2].equals(row[1])){
             return switch (row[1]){
-                case "🍕" ->  bet * 3;
+                case "🍕" ->  bet * 5;
                 case "✨" ->  bet * 5;
-                case "🧨" ->  bet * 8;
-                case "🎉" ->  bet * 10;
-                case "🎀" ->  bet * 20;
+                case "🧨" ->  bet * 5;
+                case "🎉" ->  bet * 5;
+                case "🎀" ->  bet * 5;
                 default -> 0;
 
             };
         }else  if (row[0].equals(row[2])){
             return switch (row[2]){
-                case "🍕" ->  bet * 3;
+                case "🍕" ->  bet * 5;
                 case "✨" ->  bet * 5;
-                case "🧨" ->  bet * 8;
-                case "🎉" ->  bet * 10;
-                case "🎀" ->  bet * 20;
+                case "🧨" ->  bet * 5;
+                case "🎉" ->  bet * 5;
+                case "🎀" ->  bet * 5;
                 default -> 0;
 
             };
