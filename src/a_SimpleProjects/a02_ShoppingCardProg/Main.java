@@ -22,7 +22,8 @@ public class Main {
 
         total = price*quantity;
         System.out.println("****************************************");
-        System.out.println("You total item price will be: "+currency+ total);
+        System.out.println("Your total item price for " + item + " will be: "+currency+ total);
+        System.out.println("****************************************");
 
 
     }

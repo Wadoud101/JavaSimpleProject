@@ -28,7 +28,7 @@ public class Main {
             }else {
                 System.out.println("YOU Win");
                 System.out.println("Correect Number is: " + randomNumber);
-                System.out.println("Number of attempts: " + attempts);
+                System.out.println("After " + attempts +" attempts");
             }
 
 
