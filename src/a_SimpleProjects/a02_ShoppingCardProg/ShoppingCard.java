@@ -2,7 +2,7 @@ package a_SimpleProjects.a02_ShoppingCardProg;
 
 import java.util.Scanner;
 
-public class Main {
+public class ShoppingCard {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
