@@ -24,7 +24,7 @@ public class BankingProgram {
             System.out.print("Please Enter Your CHOICE: ");
             choice = in.nextInt();
 
-            System.out.println("*****************");
+            System.out.println("***********************************");
             switch (choice){
                 case 1 -> showBalance(balance);
                 case 2 -> deposit();
@@ -32,9 +32,15 @@ public class BankingProgram {
                 case 4 -> isRunning = false;
                 default -> System.out.println("Enter Correct CHOICE!!");
             }
-            System.out.println("*****************");
+
+            System.out.println("***********************************");
+
+
 
         }
+        System.out.println("Thanks for your business with us!!");
+        System.out.println("***********************************");
+
 
     }
 
